@@ -1,6 +1,6 @@
 import '../css/ElectricityBillCalculator.css'
 
-function Activity4() {
+function ElectricityBillCalculator() {
   return (
     <section className="blank-page electricity-page page-enter">
       <span className="activity-label">ACTIVITY 04</span>
@@ -16,4 +16,4 @@ function Activity4() {
   )
 }
 
-export default Activity4
+export default ElectricityBillCalculator
