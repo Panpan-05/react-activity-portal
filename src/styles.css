@@ -1,0 +1,395 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  color: #1f2a44;
+  background: #fffdf5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  /* Color Theme */
+  --navy: #1f2a44;
+  --blue: #3b4cca;
+  --blue-dark: #2d3ba5;
+
+  --yellow: #ffcb05;
+  --yellow-dark: #d9a900;
+
+  --red: #e3350d;
+
+  --ink: #1f2a44;
+  --muted: #6b7280;
+
+  --line: #e5dfc8;
+  --card: #ffffff;
+
+  --green: #2e9d5b;
+  --error: #d64545;
+
+  --soft-yellow: #fff6cf;
+  --soft-blue: #eef0ff;
+  --soft-red: #fff0eb;
+  --soft-green: #eaf8ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  color: var(--ink);
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 203, 5, 0.15),
+      transparent 25%
+    ),
+    #fffdf5;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-shell {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+
+  width: min(1100px, calc(100% - 40px));
+
+  margin: 0 auto;
+
+  padding: 45px 0 60px;
+}
+
+/* Shared page heading */
+
+.page-heading {
+  margin-bottom: 30px;
+}
+
+.activity-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: var(--red);
+
+  font-size: 0.72rem;
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+}
+
+.page-heading h1 {
+  margin: 0;
+
+  color: var(--navy);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  line-height: 1.1;
+}
+
+.page-heading p {
+  margin: 10px 0 0;
+
+  color: var(--muted);
+
+  line-height: 1.5;
+}
+
+/* Shared buttons */
+
+.primary-button,
+.secondary-button {
+  min-height: 44px;
+
+  padding: 0 18px;
+
+  border: 0;
+  border-radius: 8px;
+
+  font-weight: 800;
+}
+
+.primary-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--navy);
+
+  background: var(--yellow);
+
+  box-shadow: 0 3px 0 var(--yellow-dark);
+}
+
+.primary-button:hover {
+  background: #ffd83d;
+}
+
+.secondary-button {
+  color: var(--navy);
+
+  background: #edf0f5;
+
+  box-shadow: 0 3px 0 #d7dbe5;
+}
+
+.secondary-button:hover {
+  background: #e1e5ec;
+}
+
+.full-width {
+  width: 100%;
+
+  margin-top: 18px;
+}
+
+/* Shared form styles */
+
+label {
+  display: block;
+
+  margin: 16px 0 7px;
+
+  color: var(--navy);
+
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+input {
+  width: 100%;
+  height: 44px;
+
+  padding: 0 12px;
+
+  color: var(--ink);
+
+  background: #fffef9;
+
+  border: 1px solid #ddd7bd;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+input::placeholder {
+  color: #aaa798;
+}
+
+input:focus {
+  border-color: var(--blue);
+
+  box-shadow: 0 0 0 3px rgba(59, 76, 202, 0.1);
+}
+
+/* Shared status components */
+
+.card-kicker {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--blue);
+
+  font-size: 0.72rem;
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+}
+
+.message {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.message span {
+  width: 22px;
+  height: 22px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  color: white;
+
+  font-weight: 900;
+}
+
+.message.success {
+  color: #176b3d;
+
+  background: var(--soft-green);
+}
+
+.message.success span {
+  background: var(--green);
+}
+
+.message.error {
+  color: #a43d46;
+
+  background: var(--soft-red);
+}
+
+.message.error span {
+  background: var(--error);
+}
+
+.empty-state {
+  min-height: 80px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+
+  text-align: center;
+
+  color: #99978b;
+
+  background: #faf9f2;
+
+  border: 1px dashed #ddd7bd;
+
+  border-radius: 8px;
+}
+
+.empty-state p {
+  margin: 0;
+
+  font-size: 0.82rem;
+}
+
+/* Shared activity card */
+
+.activity-page {
+  width: 100%;
+}
+
+/* Blank Activities 3–5 */
+
+.blank-page {
+  min-height: 400px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 45px;
+
+  background: white;
+
+  border: 1px solid var(--line);
+
+  border-radius: 16px;
+
+  box-shadow: 0 5px 15px rgba(31, 42, 68, 0.05);
+}
+
+.blank-page h1 {
+  margin: 10px 0;
+
+  color: var(--navy);
+
+  font-size: clamp(2rem, 5vw, 3.3rem);
+}
+
+.blank-page p {
+  max-width: 580px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  line-height: 1.6;
+}
+
+.coming-soon {
+  width: fit-content;
+
+  margin-top: 20px;
+
+  padding: 10px 14px;
+
+  color: var(--navy);
+
+  background: var(--soft-yellow);
+
+  border: 1px solid #f0d56a;
+
+  border-radius: 8px;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .main-content {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-content {
+    width: calc(100% - 24px);
+  }
+
+  .blank-page {
+    padding: 20px;
+  }
+}

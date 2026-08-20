@@ -1,0 +1,292 @@
+.grade-page {
+  width: 100%;
+}
+
+/* Main Card */
+
+.grade-card {
+  width: min(620px, 100%);
+
+  margin: 0 auto;
+
+  padding: 30px;
+
+  background: var(--card);
+
+  border: 1px solid var(--line);
+
+  border-radius: 16px;
+
+  box-shadow: 0 6px 18px rgba(31, 42, 68, 0.07);
+}
+
+/* Form */
+
+.grade-card .form-header {
+  margin-bottom: 20px;
+}
+
+.grade-card .form-header h2 {
+  margin: 0;
+
+  color: var(--navy);
+
+  font-size: 1.25rem;
+}
+
+.grade-card .form-header p {
+  margin: 5px 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.85rem;
+}
+
+.grade-card label {
+  display: block;
+
+  margin: 16px 0 7px;
+
+  color: var(--navy);
+
+  font-size: 0.82rem;
+
+  font-weight: 800;
+}
+
+.grade-card input {
+  width: 100%;
+  height: 44px;
+
+  padding: 0 12px;
+
+  color: var(--ink);
+
+  background: #fffef9;
+
+  border: 1px solid #ddd7bd;
+
+  border-radius: 8px;
+
+  outline: none;
+}
+
+.grade-card input::placeholder {
+  color: #aaa798;
+}
+
+.grade-card input:focus {
+  border-color: var(--blue);
+
+  box-shadow: 0 0 0 3px rgba(59, 76, 202, 0.1);
+}
+
+/* Buttons */
+
+.grade-card .button-row {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.grade-card .button-row .primary-button,
+.grade-card .button-row .secondary-button {
+  flex: 1;
+}
+
+/* Evaluation */
+
+.evaluation-section {
+  margin-top: 30px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #eee9d8;
+}
+
+.grade-card .card-kicker {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--blue);
+
+  font-size: 0.72rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+}
+
+/* Result */
+
+.grade-result {
+  display: grid;
+
+  gap: 8px;
+}
+
+.grade-card .result-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #eee9d8;
+}
+
+.grade-card .result-row span {
+  color: var(--muted);
+
+  font-size: 0.82rem;
+}
+
+.grade-card .result-row strong {
+  color: var(--navy);
+
+  font-size: 0.9rem;
+
+  text-align: right;
+}
+
+/* Remark */
+
+.grade-card .remark-box {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 10px;
+
+  padding: 15px;
+
+  color: var(--navy);
+
+  background: var(--soft-yellow);
+
+  border: 1px solid #f0d56a;
+
+  border-radius: 8px;
+}
+
+.grade-card .remark-box span {
+  font-size: 0.7rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+}
+
+.grade-card .remark-box strong {
+  color: var(--red);
+
+  font-size: 1.1rem;
+}
+
+/* Empty State */
+
+.grade-card .empty-state {
+  min-height: 80px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 15px;
+
+  text-align: center;
+
+  color: #99978b;
+
+  background: #faf9f2;
+
+  border: 1px dashed #ddd7bd;
+
+  border-radius: 8px;
+}
+
+.grade-card .empty-state p {
+  margin: 0;
+
+  font-size: 0.82rem;
+}
+
+/* Grade Scale */
+
+.grade-scale {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 5px;
+
+  margin-top: 20px;
+}
+
+.grade-scale div {
+  min-width: 0;
+
+  padding: 8px 5px;
+
+  text-align: center;
+
+  background: #faf9f2;
+
+  border: 1px solid #eee9d8;
+
+  border-radius: 6px;
+}
+
+.grade-scale span,
+.grade-scale b {
+  display: block;
+}
+
+.grade-scale span {
+  color: #99978b;
+
+  font-size: 0.63rem;
+}
+
+.grade-scale b {
+  margin-top: 3px;
+
+  color: var(--navy);
+
+  font-size: 0.66rem;
+}
+
+@media (max-width: 520px) {
+  .grade-card {
+    padding: 20px;
+  }
+
+  .grade-card .button-row {
+    flex-direction: column;
+  }
+
+  .grade-scale {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grade-card .remark-box {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 5px;
+  }
+}
