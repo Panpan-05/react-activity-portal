@@ -1,6 +1,6 @@
 import '../css/EmployeeAttendanceChecker.css'
 
-function Activity5() {
+function EmployeeAttendanceChecker() {
   return (
     <section className="blank-page attendance-page page-enter">
       <span className="activity-label">ACTIVITY 05</span>
@@ -16,4 +16,4 @@ function Activity5() {
   )
 }
 
-export default Activity5
+export default EmployeeAttendanceChecker
