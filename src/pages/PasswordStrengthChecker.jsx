@@ -1,6 +1,6 @@
 import '../css/PasswordStrengthChecker.css'
 
-function Activity3() {
+function PasswordStrengthChecker() {
   return (
     <section className="blank-page password-page page-enter">
       <span className="activity-label">ACTIVITY 03</span>
@@ -16,4 +16,4 @@ function Activity3() {
   )
 }
 
-export default Activity3
+export default PasswordStrengthChecker
