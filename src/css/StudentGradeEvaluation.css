@@ -2,8 +2,6 @@
   width: 100%;
 }
 
-/* Main Card */
-
 .grade-card {
   width: min(620px, 100%);
 
@@ -19,8 +17,6 @@
 
   box-shadow: 0 6px 18px rgba(31, 42, 68, 0.07);
 }
-
-/* Form */
 
 .grade-card .form-header {
   margin-bottom: 20px;
@@ -81,8 +77,6 @@
   box-shadow: 0 0 0 3px rgba(59, 76, 202, 0.1);
 }
 
-/* Buttons */
-
 .grade-card .button-row {
   display: flex;
 
@@ -95,8 +89,6 @@
 .grade-card .button-row .secondary-button {
   flex: 1;
 }
-
-/* Evaluation */
 
 .evaluation-section {
   margin-top: 30px;
@@ -119,8 +111,6 @@
 
   letter-spacing: 0.12em;
 }
-
-/* Result */
 
 .grade-result {
   display: grid;
@@ -155,8 +145,6 @@
 
   text-align: right;
 }
-
-/* Remark */
 
 .grade-card .remark-box {
   display: flex;
@@ -194,8 +182,6 @@
   font-size: 1.1rem;
 }
 
-/* Empty State */
-
 .grade-card .empty-state {
   min-height: 80px;
 
@@ -223,8 +209,6 @@
 
   font-size: 0.82rem;
 }
-
-/* Grade Scale */
 
 .grade-scale {
   display: grid;

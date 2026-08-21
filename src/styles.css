@@ -130,8 +130,6 @@ a {
   line-height: 1.5;
 }
 
-/* Shared buttons */
-
 .primary-button,
 .secondary-button {
   min-height: 44px;
@@ -179,8 +177,6 @@ a {
   margin-top: 18px;
 }
 
-/* Shared form styles */
-
 label {
   display: block;
 
@@ -217,8 +213,6 @@ input:focus {
 
   box-shadow: 0 0 0 3px rgba(59, 76, 202, 0.1);
 }
-
-/* Shared status components */
 
 .card-kicker {
   display: block;
@@ -311,13 +305,9 @@ input:focus {
   font-size: 0.82rem;
 }
 
-/* Shared activity card */
-
 .activity-page {
   width: 100%;
 }
-
-/* Blank Activities 3–5 */
 
 .blank-page {
   min-height: 400px;
@@ -375,8 +365,6 @@ input:focus {
   font-size: 0.8rem;
   font-weight: 800;
 }
-
-/* Responsive */
 
 @media (max-width: 800px) {
   .main-content {

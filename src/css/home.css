@@ -2,8 +2,6 @@
   width: 100%;
 }
 
-/* Hero */
-
 .hero-card {
   padding: 55px;
 
@@ -55,8 +53,6 @@
 
   line-height: 1.6;
 }
-
-/* Activity list */
 
 .home-grid {
   display: grid;
